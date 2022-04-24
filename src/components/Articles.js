@@ -1,24 +1,28 @@
+import '../scss/Articles.scss';
+
 function Articles() {
     const listItems = articles.map((article) =>
         <article>
-            <h4>{article.title}</h4>
-            <a href={article.link}>
-                <img width={100} height={100} src={article.img} alt={article.title}/>
-            </a>
-            <section>
-                <p>{article.description}</p>
-            </section>
+            <div>
+                <a href={article.link}>
+                    <h4>{article.title}</h4>
+                    <img width={100} height={100} src={article.img} alt={article.title}/>
+                </a>
+            </div>
+            <div>
+                <section>
+                    <p>{article.description}</p>
+                </section>
+            </div>
         </article>
     );
     return (
-        <header>
+        <div className={'articles'}>
             <h3>Popular web browsers</h3>
-            <nav>
-                <ul>
-                    {listItems}
-                </ul>
-            </nav>
-        </header>
+            <div>
+                {listItems}
+            </div>
+        </div>
     )
 }
 const articles = [

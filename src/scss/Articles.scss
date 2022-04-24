@@ -1,0 +1,41 @@
+.articles {
+  h3 {
+    text-align: center;
+  }
+  
+  article {
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid #333333;
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+
+    div {
+      display: inline-grid;
+    }
+    
+    img:hover {
+      transform: rotate(90deg);
+      transition: .2s;
+    }
+    
+    a {
+      padding: 5px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #111111;
+    }
+    
+    a:hover {
+      background-color: #282c34;
+      transition: .2s;
+      
+      h4{
+        color: whitesmoke;
+        transition: .2s;
+      }
+    }
+  }
+}

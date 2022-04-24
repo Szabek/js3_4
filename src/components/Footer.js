@@ -1,6 +1,8 @@
+import '../scss/Footer.scss';
+
 function Footer() {
     return (
-        <footer>
+        <footer className={'footer'}>
             <section>
                 <p>Copyright &copy; {text}</p>
             </section>

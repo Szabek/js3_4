@@ -1,3 +1,5 @@
+import '../scss/Header.scss';
+
 function Header() {
     const listItems = navItems.map((navigation) =>
         <li>
@@ -5,7 +7,7 @@ function Header() {
         </li>
     );
     return (
-        <header>
+        <header className={'header'}>
             <h1>Navigation bar</h1>
             <nav>
                 <ul>
